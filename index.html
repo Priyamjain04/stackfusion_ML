@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<title>
+		Number Plate	</title>
+</head>
+
+<body style="background-color: grey">
+
+	<h1 style="color: black" align="center"> NUMBER PLATE DETECTION  OCR</h1>
+	<div style="background-color: white">
+
+		<form method= "POST" action="/" enctype="multipart/form-data">  <!--is we are working with file we have to write enctype-->
+
+			<input type="file" name="userfile" placeholder="Your Image">
+
+			<button type="submit">SUBMIT</button>
+		</form>
+
+	</div>
+	<br>
+ <br> <br> <br>	<br>
+
+	
+				<img src= '../static/{{your_text['img']}}'  alt="USER IMAGE" width="400px" height="300px">
+
+	
+<br><br><br>	<img src= "../static/{{your_text['img']}}"  alt="USER  DETECTED PLATE" width="400px" height="300px">
+
+		<br> 
+		<h1> Number plate recognised : <i style="color: BLUE"> {{your_text['text'] }} </i>
+ </h1>
+	
+<BR>
+<H3 align="RIGHT">PROJECT@ Priyam Jain</H3>		
+	
+</body>
+
+
+</html>
+
+
